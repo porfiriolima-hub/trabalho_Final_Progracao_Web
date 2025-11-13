@@ -2,7 +2,7 @@
 
 Equipe:
   Denilson Porfiirio de Lima; 
-  Bustavo Henrique Nascimento Silva; 
+  Gustavo Henrique Nascimento Silva; 
   Joás Luna do Nascimento; 
   Icaro Yuri Veloso Rodrigues.
 
