@@ -7,7 +7,7 @@ Equipe:
   Icaro Yuri Veloso Rodrigues.
 
 Projeto:
-  Cronstruir um site de uma barbearia, contendo Paginas de HOME, Quem somos, Produtos, Serviços e Login, 
+  Cronstruir um site de uma barbearia "Barber Prime", contendo Paginas de HOME, Quem somos, Produtos, Serviços e Login, 
   no login terá uma pagina de acesso ao painel administrativo que tem os agendamentos dos clientes que utilizarem o site.
   
   
