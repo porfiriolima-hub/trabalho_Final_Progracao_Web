@@ -1,16 +1,20 @@
-<footer class="py-4">
-  <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
-    <div class="d-flex align-items-center mb-3 mb-lg-0">
-      <img src="imagens/logo.svg" alt="Logo Nextron" width="32" height="32" class="me-2">
-      <strong>Nextron Informática</strong>
+<footer class="">
+  <head>
+    <title>Minha Página</title>
+    <link rel="stylesheet" type="text/css" href="rodape.css">
+</head>
+  <div class="body">
+    <div class>
+      <img src="imagens\ChatGPT Image 17 de nov. de 2025, 19_47_56.png" alt="Logo Nextron" width="64" height="64" class="">
+      <strong>barber primer</strong>
     </div>
-    <div class="text-dim">
-      © 2025 Nextron Informática — Empresa de <strong>tradições familiares</strong> · contato@nextron.dev · (83) 0000-0000
+    <div class="div-frase">
+   <strong>Empresa de tradições familiares</strong> <br> contato <br><a href="https://maps.app.goo.gl/fYe61zfn2YLva2ds9" style=" text-decoration:none; color: #ffffffff">R. Ana Maria Palitot Ramalho - Mangabeira II, João Pessoa - PB, 580</a>
+   <br>(83) 9 9800-5692
     </div>
   </div>
 </footer>
 
-   
 
 </body>
 </html>
