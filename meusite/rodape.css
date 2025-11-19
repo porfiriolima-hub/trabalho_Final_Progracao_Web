@@ -1,7 +1,19 @@
 footer{
-     color: white;
-    background-color: #B0292E;
+     color:#C9A154;
+    background-color: #3a3e44;
 }
+
 .div-frase{
-  
+text-align: center;
+}
+.logo-titulo{
+  color: #C9A154;
+  display: flex;          
+  align-items: center;    
+  gap: 10px;
+  font-size: 1.5em;
+ }
+.barber-prime {
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
 }

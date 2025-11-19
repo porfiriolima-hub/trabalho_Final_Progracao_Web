@@ -1,53 +1,61 @@
 <!--Seção QUEM SOMOS-->
-<section class="py-5 bg-dark text-light">
+<section class="quem">
   <div class="container">
     <div class="text-center mb-5">
       <h2 class="fw-bold text-uppercase text-info">Quem Somos</h2>
-      <p class="text-secondary">Conheça a Nextron Informática</p>
+      <p class="text-secondary">Conheça a barber prime</p>
     </div>
 
     <div class="row justify-content-center">
       <div class="col-lg-10">
-        <p class="lead">
-          A <strong>Nextron Informática</strong> nasceu com o propósito de aproximar pessoas e tecnologia, oferecendo soluções completas em produtos e serviços voltados para o universo da informática.
-        </p>
-        <p>
-          Somos uma empresa <strong>de tradições familiar</strong>, desenvolvida para <strong>você</strong>, mas com uma <strong>visão de inovação e excelência</strong>, representando o modelo de negócio de uma loja moderna, confiável e conectada às necessidades dos clientes.
-        </p>
-        <p>
-          Com um portfólio diversificado, a Nextron atua na <strong>venda de equipamentos de informática, periféricos, componentes, acessórios e dispositivos de rede</strong>, além de oferecer <strong>serviços técnicos especializados</strong>, como montagem e upgrade de computadores, instalação de sistemas operacionais, backup e consultoria em redes domésticas e corporativas.
-        </p>
-        <p>
-          Nosso diferencial está em unir <strong>tecnologia, conhecimento e atendimento humanizado</strong>. Acreditamos que cada cliente é único, e que cada solução deve ser personalizada, eficiente e segura.
-        </p>
+<section id="quem-somos">
+  <h2>Quem Somos</h2>
 
+  <p>
+    A <strong>Barber Prime</strong> nasceu em <mark>2011</mark>, fundada por <strong>dois irmãos</strong> que transformaram sua paixão por estilo, cuidado masculino e atendimento impecável em um propósito de vida.
+  </p>
+
+  <p>
+    O que começou como um pequeno espaço dedicado ao corte clássico e à barbearia tradicional rapidamente evoluiu para uma <strong>referência em estética masculina</strong>.
+    Com dedicação, técnica e um olhar moderno, a <strong>Barber Prime</strong> conquistou seu lugar no coração de <strong>João Pessoa</strong>, tornando-se uma das barbearias mais reconhecidas da cidade.
+    Hoje, localizada no bairro de <em>Mangabeira</em>, seguimos firmes na missão de oferecer mais do que um simples corte: entregamos <strong>experiência</strong>, <strong>identidade</strong> e <strong>confiança</strong>.
+  </p>
+
+  <p>
+    Cada detalhe do nosso serviço é pensado para garantir <strong>conforto</strong>, <strong>qualidade premium</strong> e uma atmosfera que combina <em>tradição</em> e <em>inovação</em>.
+    Aqui, cada cliente é recebido como parte da <strong>família</strong> que ajudou a construir essa história — respeito, profissionalismo e acolhimento são nossa marca.
+  </p>
+
+  <p>
+    A <strong>Barber Prime</strong> continua crescendo mantendo suas raízes, valorizando o cuidado masculino e elevando o padrão de barbearia na região.
+  </p>
+</section>
         <div class="row text-center mt-5">
           <div class="col-md-4 mb-4">
             <div class="p-4 border border-info rounded-4 h-100 shadow-sm">
               <div class="display-6 mb-3">💡</div>
-              <h5 class="fw-bold text-info">Missão</h5>
-              <p class="text-secondary">Facilitar o acesso à tecnologia de qualidade, promovendo praticidade, desempenho e confiança em cada atendimento.</p>
+              <h5 class="fw-bold text-info"> Experiência Premium</h5>
+              <p class="text-secondary">Oferecemos um atendimento cuidadoso, focado em conforto e qualidade. Cada cliente vive uma experiência completa, muito além de um simples corte.</p>
             </div>
           </div>
 
           <div class="col-md-4 mb-4">
             <div class="p-4 border border-success rounded-4 h-100 shadow-sm">
               <div class="display-6 mb-3">🚀</div>
-              <h5 class="fw-bold text-success">Visão</h5>
-              <p class="text-secondary">Ser referência regional em inovação tecnológica e excelência em serviços de informática.</p>
+              <h5 class="fw-bold text-success">Profissionais Especializados</h5>
+              <p class="text-secondary">Nossa equipe é formada por barbeiros altamente treinados, dominando desde técnicas tradicionais até estilos modernos e personalizados.</p>
             </div>
           </div>
 
           <div class="col-md-4 mb-4">
             <div class="p-4 border border-warning rounded-4 h-100 shadow-sm">
               <div class="display-6 mb-3">🤝</div>
-              <h5 class="fw-bold text-warning">Valores</h5>
-              <p class="text-secondary">Ética, transparência, respeito, inovação e compromisso com o cliente.</p>
+              <h5 class="fw-bold text-warning">Tradição e Inovação</h5>
+              <p class="text-secondary">Desde 2011, unimos o clássico ao contemporâneo, trazendo o melhor da barbearia tradicional com toques modernos que elevam seu visual.</p>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>
-</section>
+  
