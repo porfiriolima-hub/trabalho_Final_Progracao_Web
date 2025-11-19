@@ -1,4 +1,5 @@
 <!--Seção QUEM SOMOS-->
+<body>
 <section class="quem">
   <div class="container">
     <div class="text-center mb-5">
@@ -58,3 +59,4 @@
       </div>
     </div>
   </div>
+</body>

@@ -1,6 +1,7 @@
 <?php
 
-    include_once "topo.php";
+    include_once "tp.php";
+      include_once "topo.php";
     include_once "menu.php";
 
     // área de conteúdo
