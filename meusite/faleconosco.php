@@ -1,7 +1,7 @@
 <?php
     echo "<h2>Fale Conosco</h2>";
 ?>
-<form action="#" target="_self">
+<form action="/action_page.php">
     <div class="mb-3">
         <label for="pwd" class="form-label">Nome:</label>
         <input type="text" class="form-control" id="pwd" placeholder="Seu nome" name="pswd">

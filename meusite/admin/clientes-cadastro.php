@@ -1,10 +1,11 @@
 <?php 
+
   require_once "config.inc.php";
 
-  if($_SERVER["REQUEST_METHOD"] == "GET"){
-    $nome = $_GET["cliente"];
-    $cidade = $_GET["cidade"];
-    $estado = $_GET["estado"];
+  if($_SERVER["REQUEST_METHOD"]== "POST"){
+    $nome = $_POST["cliente"];
+    $cidade = $_POST["cidade"];
+    $estado = $_POST["estado"];
 
     $sql = "INSERT INTO clientes (cliente, cidade, estado)
     VALUES ('$nome', '$cidade','$estado')";
@@ -23,4 +24,3 @@
   }
   
   mysqli_close($conexao);
-?>

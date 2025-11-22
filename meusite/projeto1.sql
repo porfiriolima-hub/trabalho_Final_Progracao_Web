@@ -65,45 +65,16 @@ CREATE TABLE `produtos` (
 
 CREATE TABLE `usuarios_comuns`
 (
-    `ID` INT AUTO_INCREMENT PRIMARY KEY,
-    `Nome` VARCHAR(50) NOT NULL,
-    `Sexo` VARCHAR(21) DEFAULT 'PREFIRO NÃO INFORMAR',
-    `Data de Nascimento` DATE NOT NULL,
-    `Tipo Sanguíneo` VARCHAR(21) DEFAULT 'PREFIRO NÃO INFORMAR',
-    `CPF` VARCHAR(12) NOT NULL,
-    `RG` VARCHAR(12) NOT NULL,
-    `País` VARCHAR(21) NOT NULL,
-    `Estado` VARCHAR(21) NOT NULL,
-    `Cidade` VARCHAR(21) NOT NULL,
-    `Bairro` VARCHAR(21) NOT NULL,
-    `Rua` VARCHAR(71) NOT NULL,
-    `CEP` VARCHAR(9) NOT NULL,
-    `Logradouro` VARCHAR(7) NOT NULL,
-    `Local de Referência` TEXT DEFAULT 'SEM LOCAL REFERÊNCIA',
+    `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `E-Mail` VARCHAR(50) NOT NULL,
     `Senha` VARCHAR(21) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 CREATE TABLE `usuarios_privilegiados`
 (
-    `ID` INT AUTO_INCREMENT PRIMARY KEY,
-    `Nome` VARCHAR(50) NOT NULL,
-    `Sexo` VARCHAR(21) DEFAULT 'PREFIRO NÃO INFORMAR',
-    `Data de Nascimento` DATE NOT NULL,
-    `Tipo Sanguíneo` VARCHAR(21) DEFAULT 'PREFIRO NÃO INFORMAR',
-    `CPF` VARCHAR(12) NOT NULL,
-    `RG` VARCHAR(12) NOT NULL,
-    `País` VARCHAR(21) NOT NULL,
-    `Estado` VARCHAR(21) NOT NULL,
-    `Cidade` VARCHAR(21) NOT NULL,
-    `Bairro` VARCHAR(21) NOT NULL,
-    `Rua` VARCHAR(71) NOT NULL,
-    `CEP` VARCHAR(9) NOT NULL,
-    `Logradouro` VARCHAR(7) NOT NULL,
-    `Local de Referência` TEXT DEFAULT 'SEM LOCAL REFERÊNCIA',
+    `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `E-Mail` VARCHAR(50) NOT NULL,
-    `Senha` VARCHAR(21) NOT NULL,
-    `Senha do Administrador` VARCHAR(37) NOT NULL
+    `Senha` VARCHAR(21) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 

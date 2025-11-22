@@ -1,5 +1,5 @@
 <h2>Cadastro de Cliente</h2>
-<form action="../index.php?pg=clientes-cadastro" method="get">
+<form action="?pg=admin/clientes-cadastro" method="post">
   <div class="mb-3">
     <label class="form-label">Nome:</label>
     <input type="text" class="form-control" name="cliente"><br>
@@ -12,5 +12,6 @@
     <label class="form-label" >Estado:</label>
     <input type="text" class="form-control" name="estado"><br>
   </div>
-  <button type="submit" class="btn btn-primary">Cadastrar Cliente</button><br>
+
+    <button type="submit" class="btn btn-primary" value="Cadartar Clientes">Cadastrar Cliente</button><br>
 </form>
