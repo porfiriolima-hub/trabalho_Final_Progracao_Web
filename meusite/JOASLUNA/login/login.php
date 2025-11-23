@@ -1,4 +1,4 @@
-<form action="?pg=JOASLUNA/login/registrar-usuario" method="post">
+<form action="?pg=JOASLUNA/login/registrar-usuario" method="post" class="JOASLUNAs-form">
     <div>
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" placeholder="Insere teu E-Mail aqui." required><br>
