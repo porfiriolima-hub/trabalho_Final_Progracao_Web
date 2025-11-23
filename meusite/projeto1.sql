@@ -63,18 +63,12 @@ CREATE TABLE `produtos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 
-CREATE TABLE `usuarios_comuns`
+CREATE TABLE `usuarios`
 (
     `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `E-Mail` VARCHAR(50) NOT NULL,
-    `Senha` VARCHAR(21) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
-CREATE TABLE `usuarios_privilegiados`
-(
-    `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    `E-Mail` VARCHAR(50) NOT NULL,
-    `Senha` VARCHAR(21) NOT NULL
+    `Senha` VARCHAR(21) NOT NULL,
+    `Tipo_de_Conta` VARCHAR(21) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 

@@ -32,14 +32,16 @@ body {
     color: #34d399;
 }
 
-form.JOASLUNAs-form > div {margin: 20px;}
+form.JOASLUNAs-form > div {
+    margin: 20px;
+    justify-self: center;
+}
 
-form.JOASLUNAs-form {
+section:has(form.JOASLUNAs-form) {
     width: 300px;
     margin: 20px;
     padding: 20px;
     background-color: #1f2a44;
     border-radius: 8px;
-    text-align: center;
-    display: flex;
+    justify-self: center;
 }

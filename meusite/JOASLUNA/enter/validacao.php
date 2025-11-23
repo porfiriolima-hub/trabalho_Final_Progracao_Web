@@ -1,5 +1,5 @@
 <?php
-    require_once "../conexao.inc.php";
+    require_once "JOASLUNA/conexao.inc.php";
 
 
     if($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -7,28 +7,27 @@
             mysqli_select_db($conexao, "projeto1");
 
             $tipo_de_conta = $_POST['tipo-de-conta'];
+            $email = $_POST["email"];
+            $senha = $_POST["senha"];
             
             $resultado = mysqli_query(
                 $conexao,
-                "SELECT * FROM `$tipo_de_conta`"
+                "SELECT * FROM `usuarios` WHERE `E-Mail` = '$email' AND `Senha` = '$senha' AND `Tipo_de_Conta` = '$tipo_de_conta'"
             );
 
             if($resultado){
                 if(mysqli_num_rows($resultado) > 0) {
-                    $achou = false;
-                    while ($linha = mysqli_fetch_array($resultado)) {
-                        if ($linha["email"] === $_POST["email"] && $linha["senha"] === $_POST["senha"]) {
-                            $achou = true;
-                            include_once "../../sistema.php";
-                            break;
-                        }
+                    if($tipo_de_conta === 'ComomUser'){
+                        header("Location: ?pg=sistema");
+                        exit;
+                    } else if($tipo_de_conta === 'Admin'){
+                        header("Location: ?pg=sistema");
+                        exit;
                     }
-                    if (!$achou) {
-                        include_once "entrar.php";
-                        echo "<br><br><h3>Email ou senha incorretos. (¬_¬)</h3>";
-                    }
+                    
                 } else {
-                    echo "Conta não cadastrada. (╯°□°）╯︵ ┻━┻";
+                    header("Location: ?pg=JOASLUNA/enter/entrar&tipo-de-conta=$tipo_de_conta");
+                    exit;
                 }
             } else {
                 echo "OPERAÇÃO FALHOU. T_T";
@@ -38,5 +37,5 @@
         }
     } else {
         echo "Método de requisição inválido. >:/";
-    }  
+    }
 ?>
