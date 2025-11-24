@@ -12,7 +12,7 @@
             
             $resultado = mysqli_query(
                 $conexao,
-                "INSERT INTO `usuarios` (`E-Mail`, `Senha`, `Tipo_de_Conta`) VALUES ('$email', '$senha', '$tipo_de_conta'))"
+                "INSERT INTO `usuarios` (`E-Mail`, `Senha`, `Tipo_de_Conta`) VALUES ('$email', '$senha', '$tipo_de_conta')"
             );
             if($resultado && $tipo_de_conta === 'ComomUser'){
                 echo "Usuário registrado com sucesso!";
@@ -21,7 +21,7 @@
                 header("Location: ?pg=sistema");
                 exit;
             } else {
-                echo "Erro ao registrar usuário.";
+                echo "Erro ao registrar usuário.<br><br>" . mysqli_error($conexao);
                 exit;
             }
         } else {

@@ -18,24 +18,26 @@
             if($resultado){
                 if(mysqli_num_rows($resultado) > 0) {
                     if($tipo_de_conta === 'ComomUser'){
-                        header("Location: ?pg=sistema");
+                        echo "Usuário entrado com sucesso!";
                         exit;
                     } else if($tipo_de_conta === 'Admin'){
                         header("Location: ?pg=sistema");
                         exit;
                     }
-                    
                 } else {
                     header("Location: ?pg=JOASLUNA/enter/entrar&tipo-de-conta=$tipo_de_conta");
                     exit;
                 }
             } else {
                 echo "OPERAÇÃO FALHOU. T_T";
+                exit;
             }
         } else {
             echo "Erro na conexão com o banco de dados. (┬┬﹏┬┬)";
+            exit;
         }
     } else {
         echo "Método de requisição inválido. >:/";
+        exit;
     }
 ?>

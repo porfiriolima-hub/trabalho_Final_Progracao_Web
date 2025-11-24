@@ -1,1 +1,1 @@
-<?php $conexao = mysqli_connect("localhost:3306", "root", "");?>
+<?php $conexao = mysqli_connect("localhost:3310", "root", "");?>
