@@ -18,7 +18,7 @@
             if($resultado){
                 if(mysqli_num_rows($resultado) > 0) {
                     if($tipo_de_conta === 'ComomUser'){
-                        echo "Usuário entrado com sucesso!";
+                        header("Location: ?pg=JOASLUNA/agendar");
                         exit;
                     } else if($tipo_de_conta === 'Admin'){
                         header("Location: ?pg=sistema");
