@@ -1,9 +1,8 @@
-<footer class="">
   <head>
     <title>Minha Página</title>
-    <link rel="stylesheet" type="text/css" href="rodape.css">
+    <link rel="stylesheet" type="text/css" href="">
 </head>
-  <div class="body">
+<footer>
     <div class="logo-titulo">
       <img src="imagens\ChatGPT Image 17 de nov. de 2025, 19_47_56.png" alt="Logo Nextron" width="64" height="64" class="">
       <span classe="barber-prime">barber primer</span>
@@ -17,7 +16,26 @@
        </div>
   </div>
 </footer>
-
-
-</body>
 </html>
+<style>
+  footer{
+color:#C9A154;
+background-color: #0C2030;
+}
+
+.div-frase{
+text-align: center;
+}
+.logo-titulo{
+  color: #C9A154;
+  display: flex;          
+  align-items: center;    
+  gap: 10px;
+  font-size: 1.5em;
+ }
+.barber-prime {
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+}
+
+</style>

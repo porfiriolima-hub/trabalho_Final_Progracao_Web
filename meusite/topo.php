@@ -9,7 +9,7 @@
   <style>
    body {
     color:white;
-      background-color: #999999;
+      background-color: #0F2A3F;
       font-family: "Inter", sans-serif;
     }
     .navbar {

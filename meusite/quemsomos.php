@@ -13,7 +13,7 @@
   <h2>Quem Somos</h2>
 
   <p>
-    A <strong>Barber Prime</strong> nasceu em <mark>2011</mark>, fundada por <strong>dois irmãos</strong> que transformaram sua paixão por estilo, cuidado masculino e atendimento impecável em um propósito de vida.
+    A <strong>Barber Prime</strong> nasceu em 2011, fundada por <strong>dois irmãos</strong> que transformaram sua paixão por estilo, cuidado masculino e atendimento impecável em um propósito de vida.
   </p>
 
   <p>
