@@ -1,0 +1,27 @@
+CREATE DATABASE IF NOT EXISTS barbearia;
+USE barbearia;
+
+
+CREATE TABLE IF NOT EXISTS produtos (
+id INT AUTO_INCREMENT PRIMARY KEY,
+nome VARCHAR(100) NOT NULL,
+preco DECIMAL(10,2) NOT NULL,
+descricao TEXT NOT NULL,
+estoque INT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS servicos (
+id INT AUTO_INCREMENT PRIMARY KEY,
+nome VARCHAR(100) NOT NULL,
+preco DECIMAL(10,2) NOT NULL,
+descricao TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS agendamentos (
+id INT AUTO_INCREMENT PRIMARY KEY,
+servico_id INT NOT NULL,
+data_agendamento DATE NOT NULL,
+hora_agendamento TIME NOT NULL,
+FOREIGN KEY (servico_id) REFERENCES servicos(id)
+);
+
