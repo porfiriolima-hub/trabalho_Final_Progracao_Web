@@ -7,6 +7,19 @@
       <img src="imagens\ChatGPT Image 17 de nov. de 2025, 19_47_56.png" alt="Logo Nextron" width="64" height="64" class="">
       <span classe="barber-prime">barber primer</span>
        </div>
+       <div class="alinhamento">
+    <div class="coluna"><a href="https://www.instagram.com/barberprime_/">
+  <img src="imagens/instagram.svg" alt="instagram barber_prime">
+</a></div>
+    <div class="coluna"><a href="https://api.whatsapp.com/message/PIQWUFX2NXX6L1?autoload=1&app_absent=0&utm_source=ig">
+  <img src="imagens/whats.svg" alt="whatssap barber_prime">
+</a></div>
+    <div class="coluna">
+<a href="https://www.facebook.com/">
+  <img src="imagens/facebook.svg" alt="facebook">
+</a></div>
+</div>
+       </div>
     </div>
        <div class="div-frase">
         <strong>Empresa de tradições familiares</strong>
@@ -21,6 +34,7 @@
   footer{
 color:#C9A154;
 background-color: #0C2030;
+padding: 25px;
 }
 
 .div-frase{
@@ -36,6 +50,16 @@ text-align: center;
 .barber-prime {
   font-weight: bold;
   font-family: "Inter", sans-serif;
+}
+.alinhamento {
+    display: flex;
+    justify-content: center;
+}
+
+.coluna {
+    width: 40px; 
+    margin: 30px;
+   
 }
 
 </style>
