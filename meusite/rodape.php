@@ -1,5 +1,5 @@
   <head>
-    <title>Minha Página</title>
+    <title>barber_prime</title>
     <link rel="stylesheet" type="text/css" href="">
 </head>
 <footer>
@@ -34,7 +34,7 @@
   footer{
 color:#C9A154;
 background-color: #0C2030;
-padding: 25px;
+padding: 20px;
 }
 
 .div-frase{
