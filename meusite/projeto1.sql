@@ -7,6 +7,10 @@
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
+
+DROP DATABASE IF EXISTS `projeto1`;
+
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
@@ -74,10 +78,8 @@ CREATE TABLE `usuarios`
 
 CREATE TABLE `agendamentos_cadastrados`
 (
-  `id` INT NOT NULL,
   `E-Mail` VARCHAR(50) NOT NULL,
-  `Prazo_Marcado` DATE NOT NULL,
-  FOREIGN KEY (`id`) REFERENCES `usuarios`(`id`)
+  `Prazo_Marcado` DATE NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --

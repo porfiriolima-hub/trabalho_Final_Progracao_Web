@@ -21,7 +21,7 @@
 
 <?php if($resultado):?>
 
-    <?php if(mysqli_num_rows($resultado > 0)):?>
+    <?php if(mysqli_num_rows($resultado) > 0):?>
 
 
         <table>

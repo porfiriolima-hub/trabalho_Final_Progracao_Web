@@ -45,3 +45,8 @@ section:has(form.JOASLUNAs-form) {
     border-radius: 8px;
     justify-self: center;
 }
+
+table {
+    text-align: center;
+    justify-self:center;
+}

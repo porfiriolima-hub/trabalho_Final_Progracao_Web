@@ -29,7 +29,7 @@
     </div>
 
     <div class="col">
-        <a href="JOASLUNA/agendamento/fila-de-agendamento" class="text-decoration-none">
+        <a href="?pg=JOASLUNA/agendamento/fila-de-agendamento" class="text-decoration-none">
             <div class="card h-100 text-center p-4 shadow-sm">
               <img src="imagens/icon-produto.svg" alt="Ícone Portal de Produtos" width="120" height="120" class="mx-auto mb-3">
               <h4 class="title">Ver Fila de Agendamento</h4>

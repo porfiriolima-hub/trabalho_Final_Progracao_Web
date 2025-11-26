@@ -15,7 +15,6 @@
         mysqli_select_db($conexao, "projeto1");
 
 
-        $id = NULL;
         $resultado = mysqli_query(
             $conexao,
             "SELECT `id` FROM `usuarios` WHERE `E-Mail` = '$email';"
@@ -24,7 +23,6 @@
             if(mysqli_num_rows($resultado) === 0){
                 operac("Acesso negado.");
             }
-            $id = mysqli_fetch_array($resultado)['id'];
         } else {
             operac("Erro na execução.");
         }
