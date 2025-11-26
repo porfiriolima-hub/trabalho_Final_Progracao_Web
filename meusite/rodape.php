@@ -31,6 +31,8 @@
 </footer>
 </html>
 <style>
+  /*finalizado */
+  /*altera apenas funções do rodape */
   footer{
 color:#C9A154;
 background-color: #0C2030;
