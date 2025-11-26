@@ -65,12 +65,20 @@ CREATE TABLE `produtos` (
 
 CREATE TABLE `usuarios`
 (
-    `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `id` INT AUTO_INCREMENT PRIMARY KEY,
     `E-Mail` VARCHAR(50) NOT NULL,
     `Senha` VARCHAR(21) NOT NULL,
     `Tipo_de_Conta` VARCHAR(21) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+
+CREATE TABLE `agendamentos_cadastrados`
+(
+  `id` INT NOT NULL,
+  `E-Mail` VARCHAR(50) NOT NULL,
+  `Prazo_Marcado` DATE NOT NULL,
+  FOREIGN KEY (`id`) REFERENCES `usuarios`(`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Despejando dados para a tabela `produtos`
