@@ -2,14 +2,12 @@
     require_once "JOASLUNA/conexao.inc.php";
 
 
-    $conexao = mysqli_connect("localhost:3306", "root", "");
-
-
     if($conexao){
 
 
         $data = $_POST["data"];
         $email = $_POST["email"];
+        $senha = $_POST["senha"];
 
 
         mysqli_select_db($conexao, "projeto1");
@@ -17,14 +15,14 @@
 
         $resultado = mysqli_query(
             $conexao,
-            "SELECT `id` FROM `usuarios` WHERE `E-Mail` = '$email';"
+            "SELECT `id` FROM `usuarios` WHERE `E-Mail` = '$email' AND `Senha` = '$senha';"
         );
         if($resultado){
             if(mysqli_num_rows($resultado) === 0){
                 operac("Acesso negado.");
             }
         } else {
-            operac("Erro na execução.");
+            operac("Erro na execução: " . mysqli_error($conexao));
         }
 
 

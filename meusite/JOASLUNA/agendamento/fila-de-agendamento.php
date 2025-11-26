@@ -27,19 +27,30 @@
         <table>
             <thead>
                 <tr>
+                    <th>Posição</th>
                     <th>E-Mail</th>
                     <th>Prazo Marcado</th>
                 </tr>
             </thead>
             <tbody>
                 <?php while($linha = mysqli_fetch_array($resultado)): ?>
-                    <tr>
-                        <td><?php echo $linha['E-Mail']; ?></td>
-                        <td><?php echo $linha['Prazo_Marcado']; ?></td>
-                    </tr>
+                    <div>
+                        <tr>
+                            <td><?php echo $linha['Posicao']; ?></td>
+                            <td><?php echo $linha['E-Mail']; ?></td>
+                            <td><?php echo $linha['Prazo_Marcado']; ?></td>
+                        </tr>                        
+                    </div>
                 <?php endwhile; ?>
             </tbody>
         </table>
+        
+        <div style="margin: 21px; justify-self: center;">
+            <a href="?pg=JOASLUNA/agendamento/pagina-de-acompanhamento">
+                <button style="background-color: aqua;">Voltar para acompanhamento</button>
+            </a>            
+        </div>
+
 
 
     <?php else:?>

@@ -78,6 +78,7 @@ CREATE TABLE `usuarios`
 
 CREATE TABLE `agendamentos_cadastrados`
 (
+  `Posicao` INT AUTO_INCREMENT PRIMARY KEY,
   `E-Mail` VARCHAR(50) NOT NULL,
   `Prazo_Marcado` DATE NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;

@@ -49,4 +49,7 @@ section:has(form.JOASLUNAs-form) {
 table {
     text-align: center;
     justify-self:center;
+    border-radius: 12px;
+    background-color: #1f2a44;
+    margin: 30px;
 }
