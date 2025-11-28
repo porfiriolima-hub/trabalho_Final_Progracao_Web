@@ -24,30 +24,32 @@
     <?php if(mysqli_num_rows($resultado) > 0):?>
 
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Posição</th>
-                    <th>E-Mail</th>
-                    <th>Prazo Marcado</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php while($linha = mysqli_fetch_array($resultado)): ?>
-                    <div>
-                        <tr>
-                            <td><?php echo $linha['Posicao']; ?></td>
-                            <td><?php echo $linha['E-Mail']; ?></td>
-                            <td><?php echo $linha['Prazo_Marcado']; ?></td>
-                        </tr>                        
-                    </div>
-                <?php endwhile; ?>
-            </tbody>
-        </table>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Posição</th>
+                        <th>E-Mail</th>
+                        <th>Prazo Marcado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php while($linha = mysqli_fetch_array($resultado)): ?>
+                        <div>
+                            <tr>
+                                <td><?php echo $linha['Posicao']; ?></td>
+                                <td><?php echo $linha['E-Mail']; ?></td>
+                                <td><?php echo $linha['Prazo_Marcado']; ?></td>
+                            </tr>                        
+                        </div>
+                    <?php endwhile; ?>
+                </tbody>
+            </table>
+        </div>
         
-        <div style="margin: 21px; justify-self: center;">
+        <div class="button">
             <a href="?pg=JOASLUNA/agendamento/pagina-de-acompanhamento">
-                <button style="background-color: aqua;">Voltar para acompanhamento</button>
+                <button>Voltar para acompanhamento</button>
             </a>            
         </div>
 
@@ -55,12 +57,14 @@
 
     <?php else:?>
 
-        <p>Nenhum agendamento cadastrado.</p>
+        <?php operac("Nenhum agendamento cadastrado."); ?>
 
     <?php endif;?>
 
 <?php else:?>
 
-    <p>Erro na execução.</p>
+    <?php operac("Erro na execução."); ?>
 
 <?php endif;?>
+
+<?php mysqli_close($conexao); ?>

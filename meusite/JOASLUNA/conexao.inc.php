@@ -1,5 +1,5 @@
 <?php 
-    $conexao = mysqli_connect("localhost:3310", "root", "");
+    $conexao = mysqli_connect("localhost:3306", "root", "");
 
     function operac($msg){
         global $conexao;
