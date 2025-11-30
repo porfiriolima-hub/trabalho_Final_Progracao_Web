@@ -54,14 +54,25 @@
         </div>
 
 
-
     <?php else:?>
+
+        <div class="button">
+            <a href="?pg=JOASLUNA/agendamento/pagina-de-acompanhamento">
+                <button>Voltar para acompanhamento</button>
+            </a>            
+        </div>
 
         <?php operac("Nenhum agendamento cadastrado."); ?>
 
     <?php endif;?>
 
 <?php else:?>
+
+    <div class="button">
+        <a href="?pg=JOASLUNA/agendamento/pagina-de-acompanhamento">
+            <button>Voltar para acompanhamento</button>
+        </a>            
+    </div>
 
     <?php operac("Erro na execução."); ?>
 
