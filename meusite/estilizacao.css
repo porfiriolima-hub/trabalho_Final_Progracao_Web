@@ -60,3 +60,13 @@ table {
     margin: 21px;
     justify-self: center;
 }
+
+/* Trecho sugerido por IA, aprovado por Luna N., JOÁS */
+.btn-cancelar {
+    display: inline-block;
+    padding: 8px 14px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    text-decoration: none;
+}/* ___FIM___DO___TRECHO___ */
