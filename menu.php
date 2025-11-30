@@ -8,7 +8,7 @@
         <a class="nav-link" href="?pg=quemsomos">Quem Somos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="?pg=produtos">Produtos</a>
+        <a class="nav-link" href="?pg=produtos/produtos">Produtos</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="?pg=servicos">Serviços</a>

@@ -13,7 +13,7 @@ $result = $conn->query($sql);
 </head>
 <body>
 <h1>Administração de Produtos</h1>
-<a href="produtosForm.php">Cadastrar Novo Produto</a>
+<a href="produtos/produtosForm.php">Cadastrar Novo Produto</a>
 <table border="1" cellpadding="8" cellspacing="0">
 <tr>
 <th>ID</th>
@@ -33,8 +33,8 @@ $result = $conn->query($sql);
 <td><?= $row['descricao'] ?></td>
 <td><?= $row['estoque'] ?></td>
 <td>
-<a href="produtosFormAlterar.php?id=<?= $row['id'] ?>">Alterar</a> |
-<a href="produtosExcluir.php?id=<?= $row['id'] ?>">Excluir</a>
+<a href="produtos/produtosFormAlterar.php?id=<?= $row['id'] ?>">Alterar</a> |
+<a href="produtos/produtosExcluir.php?id=<?= $row['id'] ?>">Excluir</a>
 </td>
 </tr>
 <?php endwhile; ?>
