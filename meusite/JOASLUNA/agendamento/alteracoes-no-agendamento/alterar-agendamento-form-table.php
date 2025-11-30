@@ -46,6 +46,7 @@
                         <div>
                             <form
                                 action="?pg=JOASLUNA/agendamento/alteracoes-no-agendamento/update"
+                                method="post"
                             >
                                 <table>
                                     <thead>
@@ -66,10 +67,10 @@
                                                 </td>
                                                 <td><?= $linha["E-Mail"] ?></td>
                                                 <td><?= $linha["Prazo_Marcado"] ?></td>
-                                                <td><input type="date" name="novos_prazos[]"></td>
+                                                <td><input type="date" name="novos-prazos[]" value="<?= $linha["Prazo_Marcado"] ?>"></td>
                                                 <td>
                                                     <a
-                                                        href="?pg=JOASLUNA/agendamento/alteracoes-no-agendamento/delete"
+                                                        href="?pg=JOASLUNA/agendamento/alteracoes-no-agendamento/delete&posicao=<?= $linha["Posicao"] ?>"
                                                         class="btn-cancelar"
                                                         onclick="return confirm('Tem certeza que quer cancelar?')"
                                                     >
@@ -80,6 +81,11 @@
                                         <?php endwhile; ?>
                                     </tbody>
                                 </table>
+
+                                <div class="button">
+                                    <button type="submit">Submeter Alterações</button>
+                                </div>
+
                             </form>
                         </div>
 
