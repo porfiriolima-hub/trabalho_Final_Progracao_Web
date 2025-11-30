@@ -1,0 +1,13 @@
+.topo{
+ background-color: #0c1323;
+}
+ .div-titulo {
+  color: #C9A154;
+  display: flex;          
+  align-items: center;    
+  gap: 10px;
+ }
+.barber-prime {
+  font-size: 1.5em;
+  font-weight: bold;
+}

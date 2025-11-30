@@ -1,0 +1,31 @@
+<svg class="instagram-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="igTitle">
+  <title id="igTitle">Ícone do Instagram</title>
+
+  <defs>
+    <!-- gradiente controlável por CSS variables -->
+    <linearGradient id="igGradient" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="var(--ig-start, #f58529)"/>
+      <stop offset="50%" stop-color="var(--ig-mid, #dd2a7b)"/>
+      <stop offset="100%" stop-color="var(--ig-end, #8134af)"/>
+    </linearGradient>
+
+    <!-- pequena sombra opcional (pode remover se preferir) -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="2" flood-color="rgba(0,0,0,0.15)"/>
+    </filter>
+  </defs>
+
+  <!-- Fundo arredondado com gradiente -->
+  <rect class="ig-bg" x="3" y="3" width="42" height="42" rx="10" ry="10"
+        fill="url(#igGradient)" filter="url(#shadow)"/>
+
+  <!-- contorno/anel branco interno (manipulável) -->
+  <rect class="ig-frame" x="10" y="10" width="28" height="28" rx="6" ry="6"
+        fill="none" stroke="var(--ig-white, #ffffff)" stroke-width="2.4" stroke-linejoin="round"/>
+
+  <!-- "lente" do aparelho (círculo interno) -->
+  <circle class="ig-lens" cx="24" cy="22.5" r="6.2" fill="none" stroke="var(--ig-white, #ffffff)" stroke-width="2.6"/>
+
+  <!-- ponto superior direito (flash / viewfinder) -->
+  <circle class="ig-dot" cx="33.5" cy="14.5" r="2.2" fill="var(--ig-white, #ffffff)"/>
+</svg>

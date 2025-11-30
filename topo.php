@@ -1,18 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Barber Prime|Seu estilo no mais alto nível.</title>
-</head>
-<body>
+  <title>Barber Prime | Barbearia de identidade</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilizacao.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
   
-<nav class="navbar navbar-expand-sm bg-light navbar-light shadow-sm">
-  <div class="container-fluid">
-    <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="image/logoBp.svg" alt="Logo Barber Prime" width="40" height="40" class="me-2">
-      <span class="fw-bold">Barber Prime</span>
-    </a>
-    <span class="navbar-text text-muted">Seu estilo no mais alto nível.</span>
-  </div>
-</nav>
+  :root {
+    --navy-premium: #0A1A2F;
+    --gold-classic: #D4A857;
+    --silver-clean: #E5E5E5;
+    --leather-brown: #5A3E2B;
+    --black-steel: #111111;
+
+    --graphite-gray: #2E2E2E;
+    --coffee-brown: #3B2F2F;
+    --medium-blue: #153A63;
+    --dark-gold: #A07A3A;
+
+    --gradient-dark: linear-gradient(135deg, #0A1A2F, #111111);
+    --gradient-gold: linear-gradient(135deg, #D4A857, #A07A3A);
+
+    --text-light: #F5F5F5;
+    --text-dark: #1A1A1A;
+    --text-gold: #D4A857;
+
+    --border-gold: #D4A857;
+    --border-dark: #0A1A2F;
+  }
+
+  
+  body {
+    color: var(--text-light);
+    background-color: var(--navy-premium);
+    font-family: "Inter", sans-serif;
+  }
+
+  
+  .navbar {
+    background-color: var(--black-steel) !important;
+  }
+
+  
+  .card {
+    background-color: var(--black-steel);
+    border: 1px solid var(--border-gold);
+    color: var(--text-gold);
+    border-radius: 12px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+
+  
+  .card:hover {
+    transform: translateY(-5px);
+    border-color: var(--gold-classic);
+  }
+
+  
+  .card-title {
+    color: var(--gold-classic);
+  }
+
+  
+  .price {
+    font-weight: 700;
+    color: var(--gold-classic);
+  }
+</style>
+
+</head>

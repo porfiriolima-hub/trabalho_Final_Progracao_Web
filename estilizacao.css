@@ -1,0 +1,62 @@
+body {
+    background-color: #0b1220;
+    color: #e5e7eb;
+    font-family: "Inter", sans-serif;
+}
+
+.navbar {background-color: #0f172a !important;}
+
+.navbar-brand span {
+    color: #38bdf8;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.card {
+    background-color: #0f172a;
+    border: 1px solid #1f2a44;
+    color: #e5e7eb;
+    border-radius: 12px;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+.card-title {color: #38bdf8;}
+
+.price {
+    font-weight: 700;
+    color: #34d399;
+}
+
+form.JOASLUNAs-form > div {
+    margin: 20px;
+    justify-self: center;
+}
+
+section:has(form.JOASLUNAs-form) {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #1f2a44;
+    border-radius: 8px;
+    justify-self: center;
+}
+
+table {
+    text-align: center;
+    justify-self:center;
+    border-radius: 10px;
+    background-color: #1f2a44;
+    margin: 30px;
+    border-collapse: separate;
+    border-spacing: 50px 10px;
+}
+
+.button {    
+    margin: 21px;
+    justify-self: center;
+}
