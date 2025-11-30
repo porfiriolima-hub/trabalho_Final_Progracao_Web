@@ -90,7 +90,7 @@
                         </div>
 
                         <div class="button">
-                            <a href="?pg=JOASLUNA/agendamento/pagina-de-acompanhamento">
+                            <a href="?pg=JOASLUNA/pagina-de-acompanhamento">
                                 <button>Voltar para acompanhamento</button>
                             </a>            
                         </div>
@@ -100,7 +100,7 @@
                     <?php else: ?>
 
                         <div class="button">
-                            <a href="?pg=JOASLUNA/agendamento/pagina-de-acompanhamento">
+                            <a href="?pg=JOASLUNA/pagina-de-acompanhamento">
                                 <button>Voltar para acompanhamento</button>
                             </a>            
                         </div>
@@ -112,7 +112,7 @@
                 <?php else: ?>
 
                     <div class="button">
-                        <a href="?pg=JOASLUNA/agendamento/pagina-de-acompanhamento">
+                        <a href="?pg=JOASLUNA/pagina-de-acompanhamento">
                             <button>Voltar para acompanhamento</button>
                         </a>            
                     </div>
@@ -124,7 +124,7 @@
             <?php else: ?>
 
                 <div class="button">
-                    <a href="?pg=JOASLUNA/agendamento/pagina-de-acompanhamento">
+                    <a href="?pg=JOASLUNA/pagina-de-acompanhamento">
                         <button>Voltar para acompanhamento</button>
                     </a>            
                 </div>
@@ -136,7 +136,7 @@
         <?php else: ?>
 
             <div class="button">
-                <a href="?pg=JOASLUNA/agendamento/pagina-de-acompanhamento">
+                <a href="?pg=JOASLUNA/pagina-de-acompanhamento">
                     <button>Voltar para acompanhamento</button>
                 </a>            
             </div>
@@ -148,7 +148,7 @@
     <?php else: ?>
 
         <div class="button">
-            <a href="?pg=JOASLUNA/agendamento/pagina-de-acompanhamento">
+            <a href="?pg=JOASLUNA/pagina-de-acompanhamento">
                 <button>Voltar para acompanhamento</button>
             </a>            
         </div>
@@ -160,7 +160,7 @@
 <?php else: ?>
 
     <div class="button">
-        <a href="?pg=JOASLUNA/agendamento/pagina-de-acompanhamento">
+        <a href="?pg=JOASLUNA/pagina-de-acompanhamento">
             <button>Voltar para acompanhamento</button>
         </a>            
     </div>
