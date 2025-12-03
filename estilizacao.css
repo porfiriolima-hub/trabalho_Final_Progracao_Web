@@ -1,3 +1,12 @@
+:root {
+  --navy-premium: #0A1A2F;
+  --gold-classic: #D4A857;
+  --black-steel: #111111;
+  --text-light: #F5F5F5;
+}
+
+
+
 body {
     background-color: #0b1220;
     color: #e5e7eb;
@@ -59,4 +68,50 @@ table {
 .button {    
     margin: 21px;
     justify-self: center;
+}
+/* Título */
+.text-gold {
+  color: var(--gold-classic);
+  font-weight: 700;
+}
+
+/* Botão dourado */
+.btn-gold {
+  background: var(--gold-classic);
+  color: var(--black-steel);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+
+.btn-gold:hover {
+  background: #b88a42;
+  color: #000;
+}
+
+/* Botão outline dourado */
+.btn-outline-gold {
+  border: 1px solid var(--gold-classic);
+  color: var(--gold-classic);
+  border-radius: 8px;
+}
+
+.btn-outline-gold:hover {
+  background: var(--gold-classic);
+  color: var(--black-steel);
+}
+
+/* Tabela */
+.table-dark {
+  background: var(--black-steel);
+  color: var(--text-light);
+}
+
+.table-gold th {
+  background: var(--navy-premium);
+  color: var(--gold-classic) !important;
+}
+
+.table-dark tbody tr:hover {
+  background: #1b1b1b;
 }

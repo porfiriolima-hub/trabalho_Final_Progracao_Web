@@ -11,19 +11,10 @@
     </div>
 
     <div class="col">
-        <a href="?pg=agendamento/cancelamento-de-agendamento/cancel-form" class="text-decoration-none">
-          <div class="card h-100 text-center p-4 shadow-sm">
-            <img src="imagens/icon-admin.svg" alt="Ícone Portal do Administrador" width="120" height="120" class="mx-auto mb-3">
-            <h4 class="title">Cancelar Agendamento</h4>
-          </div>
-        </a>
-    </div>
-
-    <div class="col">
-        <a href="?pg=agendamento/alteracao-da-data-de-agendamento/alterar-data-form" class="text-decoration-none">
+        <a href="?pg=agendamento/alteracoes-no-agendamento/alterar-form" class="text-decoration-none">
             <div class="card h-100 text-center p-4 shadow-sm">
               <img src="imagens/icon-produto.svg" alt="Ícone Portal de Produtos" width="120" height="120" class="mx-auto mb-3">
-              <h4 class="title">Alterar data do Serviço</h4>
+              <h4 class="title">Alterações do agendamento</h4>
             </div>
         </a>
     </div>

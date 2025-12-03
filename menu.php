@@ -8,7 +8,7 @@
         <a class="nav-link" href="?pg=quemsomos">Quem Somos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="?pg=produtos/produtos">Produtos</a>
+        <a class="nav-link" href="?pg=produtosCliente/produtosCliente">Produtos</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="?pg=servicos">Serviços</a>
@@ -16,9 +16,6 @@
       <li class="nav-item">
         <a class="nav-link" href="?pg=faleconosco">Fale Conosco</a>
       </li>      
-      <li class="nav-item">
-        <a class="nav-link" href="?pg=login/opcoes-de-login">Login</a>
-      </li>
       <li class="nav-item">
         <a class="nav-link" href="?pg=enter/opcoes-de-entrada">Entrar</a>
       </li>

@@ -10,7 +10,7 @@
         $senha = $_POST["senha"];
 
 
-        mysqli_select_db($conexao, "barearia");
+        mysqli_select_db($conexao, "barbearia");
 
 
         $resultado = mysqli_query(

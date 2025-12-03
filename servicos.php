@@ -4,22 +4,24 @@
 
       <!-- Corte de Cabelo -->
       <div class="col">
-        <div class="card h-100 p-3 shadow-sm">
-          <div class="d-flex justify-content-between align-items-start mb-2">
-            <div class="display-6" aria-hidden="true">💇‍♂️</div>
-            <span class="badge bg-primary-subtle text-primary">Serviço</span>
+        <a href="index.php?pg=enter/opcoes-de-entrada" class="text-decoration-none text-reset">
+          <div class="card h-100 p-3 shadow-sm">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <div class="display-6" aria-hidden="true">💇‍♂️</div>
+              <span class="badge bg-primary-subtle text-primary">Serviço</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Corte de Cabelo</h5>
+              <p class="card-text text-dim">Cortes modernos e tradicionais com acabamento personalizado conforme formato do rosto e estilo desejado.</p>
+              <ul class="text-dim mb-3">
+                <li>Consulta de estilo</li>
+                <li>Máquina, tesoura e finalização</li>
+                <li>Acabamento com navalha (opcional)</li>
+              </ul>
+              <span class="badge bg-success-subtle text-success border border-success">Sob consulta</span>
+            </div>
           </div>
-          <div class="card-body">
-            <h5 class="card-title">Corte de Cabelo</h5>
-            <p class="card-text text-dim">Cortes modernos e tradicionais com acabamento personalizado conforme formato do rosto e estilo desejado.</p>
-            <ul class="text-dim mb-3">
-              <li>Consulta de estilo</li>
-              <li>Máquina, tesoura e finalização</li>
-              <li>Acabamento com navalha (opcional)</li>
-            </ul>
-            <span class="badge bg-success-subtle text-success border border-success">Sob consulta</span>
-          </div>
-        </div>
+        </a>
       </div>
 
       <!-- Corte de Barba -->

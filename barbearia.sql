@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 30/11/2025 às 18:45
+-- Tempo de geração: 03/12/2025 às 17:56
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -31,8 +31,37 @@ CREATE TABLE `agendamentos` (
   `id` int(11) NOT NULL,
   `servico_id` int(11) NOT NULL,
   `data_agendamento` date NOT NULL,
-  `hora_agendamento` time NOT NULL
+  `hora_agendamento` time NOT NULL,
+  `observacoes` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `agendamentos`
+--
+
+INSERT INTO `agendamentos` (`id`, `servico_id`, `data_agendamento`, `hora_agendamento`, `observacoes`) VALUES
+(1, 2, '0000-00-00', '00:00:00', 'corte de cabelo'),
+(2, 2, '0000-00-00', '00:00:00', 'corte de cabelo'),
+(3, 2, '0000-00-00', '00:00:00', '');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `agendamentos_cadastrados`
+--
+
+CREATE TABLE `agendamentos_cadastrados` (
+  `Posicao` int(11) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `Prazo_Marcado` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `agendamentos_cadastrados`
+--
+
+INSERT INTO `agendamentos_cadastrados` (`Posicao`, `email`, `Prazo_Marcado`) VALUES
+(1, 'capporfirio@gmail.com', '2025-12-20');
 
 -- --------------------------------------------------------
 
@@ -45,6 +74,7 @@ CREATE TABLE `produtos` (
   `nome` varchar(100) NOT NULL,
   `preco` decimal(10,2) NOT NULL,
   `descricao` text NOT NULL,
+  `imagem` varchar(255) DEFAULT NULL,
   `estoque` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -52,8 +82,8 @@ CREATE TABLE `produtos` (
 -- Despejando dados para a tabela `produtos`
 --
 
-INSERT INTO `produtos` (`id`, `nome`, `preco`, `descricao`, `estoque`) VALUES
-(1, 'Shampoo Hidratante', 12.00, 'Shanpoo, hidratante completo. No corpo, revigora e estimula a circulação, na cabeça, fortalece os fios enfraquecidos e previne queda. Limpa profundamente e evita coceira no couro cabeludo.', 10);
+INSERT INTO `produtos` (`id`, `nome`, `preco`, `descricao`, `imagem`, `estoque`) VALUES
+(1, 'Shampoo Hidratante', 12.00, 'Shanpoo, hidratante completo. No corpo, revigora e estimula a circulação, na cabeça, fortalece os fios enfraquecidos e previne queda. Limpa profundamente e evita coceira no couro cabeludo.', 'https://acdn-us.mitiendanube.com/stores/002/864/548/products/1-2d5fb31bafcdc537fa17442921788978-1024-1024.webp', 10);
 
 -- --------------------------------------------------------
 
@@ -67,6 +97,13 @@ CREATE TABLE `servicos` (
   `preco` decimal(10,2) NOT NULL,
   `descricao` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `servicos`
+--
+
+INSERT INTO `servicos` (`id`, `nome`, `preco`, `descricao`) VALUES
+(2, 'corte de cabelo', 35.00, 'corte de cabelo masculino');
 
 -- --------------------------------------------------------
 
@@ -88,7 +125,8 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`, `criado_em`, `tipo_de_conta`) VALUES
-(1, 'Denilson', 'capporfirio@gmail.com', '123456dpl', '2025-11-29 18:57:03', 'Admin');
+(1, 'Denilson', 'capporfirio@gmail.com', '123456dpl', '2025-11-29 18:57:03', 'Admin'),
+(3, 'Denilson', 'capporfirio@gmail.com', '456789dpl', '2025-12-02 00:00:00', 'ComomUser');
 
 --
 -- Índices para tabelas despejadas
@@ -100,6 +138,12 @@ INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`, `criado_em`, `tipo_de_co
 ALTER TABLE `agendamentos`
   ADD PRIMARY KEY (`id`),
   ADD KEY `servico_id` (`servico_id`);
+
+--
+-- Índices de tabela `agendamentos_cadastrados`
+--
+ALTER TABLE `agendamentos_cadastrados`
+  ADD PRIMARY KEY (`Posicao`);
 
 --
 -- Índices de tabela `produtos`
@@ -117,8 +161,7 @@ ALTER TABLE `servicos`
 -- Índices de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `email` (`email`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT para tabelas despejadas
@@ -128,7 +171,13 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `agendamentos`
 --
 ALTER TABLE `agendamentos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT de tabela `agendamentos_cadastrados`
+--
+ALTER TABLE `agendamentos_cadastrados`
+  MODIFY `Posicao` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de tabela `produtos`
@@ -140,13 +189,13 @@ ALTER TABLE `produtos`
 -- AUTO_INCREMENT de tabela `servicos`
 --
 ALTER TABLE `servicos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Restrições para tabelas despejadas

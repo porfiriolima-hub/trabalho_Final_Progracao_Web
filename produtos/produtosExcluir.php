@@ -16,6 +16,6 @@ $stmt->bind_param("i", $id);
 $stmt->execute();
 
 
-header('Location: produtosAdmin.php');
+header('Location:produtosAdmin.php');
 exit;
 ?>

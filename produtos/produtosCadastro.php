@@ -15,7 +15,8 @@ $stmt->bind_param("sdsi", $nome, $preco, $descricao, $estoque);
 $stmt->execute();
 
 
-header('Location: produtosAdmin.php');
+header('Location:produtosForm.php');
 exit;
+
 }
 ?>

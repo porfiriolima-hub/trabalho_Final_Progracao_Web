@@ -24,10 +24,10 @@
 
 
                     if($tipo_de_conta === 'ComomUser'){
-                        header("Location: ?pg=agendamento/pagina-de-acompanhamento");
+                        header("Location: ?pg=pagina-de-acompanhamento");
                         exit;
                     } else if($tipo_de_conta === 'Admin'){
-                        header("Location: ?pg=enter/entrar");
+                        header("Location: ?pg=sistema");
                         exit;
                     } else {
                         operac("Erro: Tipo de conta desconhecido. (╯°□°）╯︵ ┻━┻");

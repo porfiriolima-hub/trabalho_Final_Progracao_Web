@@ -1,0 +1,68 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Ícone Administrador - Barber Prime</title>
+  <desc id="desc">Avatar de administrador com crachá, no estilo visual Barber Prime.</desc>
+
+  <!-- Fundo circular -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1A2F"/>
+      <stop offset="100%" stop-color="#111111"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="60" cy="60" r="58" fill="url(#bgGrad)" stroke="#D4A857" stroke-width="2"/>
+
+  <!-- Cabeça -->
+  <circle cx="60" cy="40" r="16" fill="#E5E5E5" stroke="#D4A857" stroke-width="2"/>
+
+  <!-- Corpo / terno -->
+  <path
+    d="M38 80
+       C40 64, 80 64, 82 80
+       L82 94
+       H38
+       Z"
+    fill="#111111"
+    stroke="#D4A857"
+    stroke-width="2"
+  />
+
+  <!-- Camisa -->
+  <path
+    d="M52 80
+       L60 88
+       L68 80
+       Z"
+    fill="#E5E5E5"
+  />
+
+  <!-- Gravata -->
+  <path
+    d="M60 80
+       L56 92
+       L60 96
+       L64 92
+       Z"
+    fill="#D4A857"
+  />
+
+  <!-- Crachá de admin (quadradinho com estrelinha) -->
+  <rect x="76" y="70" width="18" height="22" rx="3" fill="#111111" stroke="#D4A857" stroke-width="2"/>
+  <circle cx="85" cy="76" r="3" fill="#D4A857"/>
+
+  <!-- Estrelinha / insígnia -->
+  <path
+    d="M85 83
+       L86.6 85.4
+       L89.5 86
+       L87.6 88
+       L88 91
+       L85 89.8
+       L82 91
+       L82.4 88
+       L80.5 86
+       L83.4 85.4
+       Z"
+    fill="#D4A857"
+  />
+</svg>
