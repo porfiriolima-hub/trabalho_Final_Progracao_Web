@@ -9,13 +9,27 @@ $descricao = $_POST['descricao'];
 $estoque = $_POST['estoque'];
 
 
-$sql = "INSERT INTO produtos (nome, preco, descricao, estoque) VALUES (?, ?, ?, ?)";
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("sdsi", $nome, $preco, $descricao, $estoque);
-$stmt->execute();
+$caminhoImagem = null;
 
 
-header('Location: produtosAdmin.php');
+if (!empty($_FILES['imagem']['name'])) {
+$arquivo = $_FILES['imagem'];
+$nomeArquivo = time() . '-' . basename($arquivo['name']);
+$destino = 'uploads/' . $nomeArquivo;
+
+
+if (move_uploaded_file($arquivo['tmp_name'], UPLOAD_PATH . $nomeArquivo)) {
+$caminhoImagem = $destino;
+}
+}
+
+
+$sql = "INSERT INTO produtos (nome, preco, descricao, estoque, imagem) VALUES (?, ?, ?, ?, ?)";
+$stmt = $pdo->prepare($sql);
+$stmt->execute([$nome, $preco, $descricao, $estoque, $caminhoImagem]);
+
+
+header("Location: produtosAdmin.php");
 exit;
 }
 ?>
