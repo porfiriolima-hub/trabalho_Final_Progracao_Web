@@ -1,23 +1,23 @@
 <?php
 require 'config.inc.php';
 
-$sql = "SELECT * FROM servicos";
-$stmt = $pdo->query($sql);
-$servicos = $stmt->fetchAll();
+$sql = "SELECT * FROM servicos ORDER BY nome ASC";
+$result = $conn->query($sql);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Gerenciar Serviços</title>
+<title>Serviços - Administração</title>
 </head>
 <body>
 
-<h1>Serviços</h1>
-<a href="servicosForm.php">Adicionar Novo Serviço</a>
+<h1>Gerenciamento de Serviços</h1>
+
+<a href="servicoAdicionar.php">Adicionar Serviço</a>
 <br><br>
 
-<table border="1" cellpadding="8">
+<table border="1" cellspacing="0" cellpadding="10">
 <tr>
     <th>ID</th>
     <th>Nome</th>
@@ -25,19 +25,18 @@ $servicos = $stmt->fetchAll();
     <th>Ações</th>
 </tr>
 
-<?php foreach ($servicos as $s): ?>
+<?php while ($row = $result->fetch_assoc()): ?>
 <tr>
-    <td><?= $s['id'] ?></td>
-    <td><?= $s['nome'] ?></td>
-    <td>R$ <?= number_format($s['preco'], 2, ',', '.') ?></td>
+    <td><?= $row['id'] ?></td>
+    <td><?= $row['nome'] ?></td>
+    <td>R$ <?= number_format($row['preco'], 2, ',', '.') ?></td>
     <td>
-        <a href="servicosFormAlterar.php?id=<?= $s['id'] ?>">Editar</a> |
-        <a href="servicosExcluir.php?id=<?= $s['id'] ?>" onclick="return confirm('Excluir serviço?')">Excluir</a> |
-        <a href="servicosAgendar.php?id=<?= $s['id'] ?>">Agendar</a>
+        <a href="servicoEditar.php?id=<?= $row['id'] ?>">Editar</a> |
+        <a href="servicoExcluir.php?id=<?= $row['id'] ?>">Excluir</a> |
+        <a href="servicoAgendamentos.php?id=<?= $row['id'] ?>">Ver Agendamentos</a>
     </td>
 </tr>
-<?php endforeach; ?>
-
+<?php endwhile; ?>
 </table>
 
 </body>

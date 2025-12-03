@@ -5,15 +5,12 @@ require 'config.inc.php';
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Catálogo da Barbearia</title>
+<title>Barbearia - Serviços</title>
 </head>
 <body>
-<h1>Bem-vindo ao Catálogo da Barbearia</h1>
-<ul>
 <?php
-header('Location: produtosCliente.php');
+header('Location: servicosCliente.php');
 exit;
 ?>
-</ul>
 </body>
 </html>
