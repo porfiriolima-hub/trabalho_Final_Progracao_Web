@@ -9,7 +9,7 @@ require 'config.inc.php';
 </head>
 <body>
 <?php
-header('Location: servicos/servicosAdmin.php');
+header('Location: servicosCliente/servicosCliente.php');
 exit;
 ?>
 </body>

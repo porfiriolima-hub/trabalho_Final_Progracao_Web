@@ -1,0 +1,98 @@
+    :root {
+      --navy-premium: #0A1A2F;
+      --gold-classic: #D4A857;
+      --silver-clean: #E5E5E5;
+      --leather-brown: #5A3E2B;
+      --black-steel: #111111;
+
+      --graphite-gray: #2E2E2E;
+      --coffee-brown: #3B2F2F;
+      --medium-blue: #153A63;
+      --dark-gold: #A07A3A;
+
+      --gradient-dark: linear-gradient(135deg, #0A1A2F, #111111);
+      --gradient-gold: linear-gradient(135deg, #D4A857, #A07A3A);
+
+      --text-light: #F5F5F5;
+      --text-dark: #1A1A1A;
+      --text-gold: #D4A857;
+
+      --border-gold: #D4A857;
+      --border-dark: #0A1A2F;
+    }
+
+    body {
+      color: var(--text-light);
+      background-color: var(--navy-premium);
+      font-family: "Inter", sans-serif;
+    }
+
+    .navbar {
+      background-color: var(--black-steel) !important;
+    }
+
+    .card {
+      background-color: var(--black-steel);
+      border: 1px solid var(--border-gold);
+      color: var(--text-gold);
+      border-radius: 12px;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: var(--gold-classic);
+    }
+
+    .card-title {
+      color: var(--gold-classic);
+    }
+
+    .price {
+      font-weight: 700;
+      color: var(--gold-classic);
+    }
+
+    /* Estilo específico para a tabela de administração */
+    .table-servicos {
+      background-color: var(--black-steel);
+      color: var(--text-light);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border-gold);
+    }
+
+    .table-servicos thead {
+      background: var(--gradient-dark);
+    }
+
+    .table-servicos th {
+      color: var(--text-gold);
+      border-bottom: 1px solid var(--border-gold);
+    }
+
+    .table-servicos tbody tr:hover {
+      background-color: #1b293d;
+    }
+
+    .btn-gold-outline {
+      border: 1px solid var(--gold-classic);
+      color: var(--gold-classic);
+    }
+
+    .btn-gold-outline:hover {
+      background: var(--gradient-gold);
+      color: var(--text-dark);
+      border-color: var(--dark-gold);
+    }
+
+    .page-title {
+      color: var(--text-gold);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .subtitle {
+      color: var(--silver-clean);
+      opacity: 0.9;
+    }

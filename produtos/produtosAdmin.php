@@ -2,56 +2,70 @@
 require 'config.inc.php';
 
 
-$sql = "SELECT * FROM produtos ORDER BY id DESC";
-$stmt = $pdo->query($sql);
-$produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$sql = "SELECT * FROM produtos";
+$result = $conn->query($sql);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
 <title>Admin - Produtos</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="estilizacao.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-<h1>Produtos</h1>
-<a href="produtosForm.php">Cadastrar Novo Produto</a>
-<br><br>
+<h1 class="mb-4 text-gold">Administração de Produtos</h1>
 
+<div class="mb-3">
+  <a href="produtos/produtosForm.php" class="btn btn-gold fw-bold">
+    ➕ Cadastrar Novo Produto
+  </a>
+</div>
 
-<table border="1" cellpadding="8" cellspacing="0">
-<tr>
-<th>ID</th>
-<th>Imagem</th>
-<th>Nome</th>
-<th>Preço</th>
-<th>Descrição</th>
-<th>Estoque</th>
-<th>Ações</th>
-</tr>
+<div class="table-responsive">
+<table class="table table-dark table-striped table-hover align-middle rounded">
+    <thead>
+      <tr class="table-gold text-center">
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Preço</th>
+        <th>Descrição</th>
+        <th>Estoque</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
 
+    <tbody>
 
-<?php foreach ($produtos as $row): ?>
-<tr>
-<td><?= htmlspecialchars($row['id']) ?></td>
-<td>
-<?php if (!empty($row['imagem']) && file_exists(__DIR__ . '/'. $row['imagem'])): ?>
-<img src="<?= htmlspecialchars($row['imagem']) ?>" alt="<?= htmlspecialchars($row['nome']) ?>" width="80">
-<?php else: ?>
-<span>Sem imagem</span>
-<?php endif; ?>
-</td>
-<td><?= htmlspecialchars($row['nome']) ?></td>
-<td>R$ <?= number_format($row['preco'], 2, ',', '.') ?></td>
-<td><?= nl2br(htmlspecialchars($row['descricao'])) ?></td>
-<td><?= htmlspecialchars($row['estoque']) ?></td>
-<td>
-<a href="produtosFormAlterar.php?id=<?= htmlspecialchars($row['id']) ?>">Editar</a> |
-<a href="produtosExcluir.php?id=<?= htmlspecialchars($row['id']) ?>" onclick="return confirm('Excluir produto?')">Excluir</a>
-</td>
-</tr>
-<?php endforeach; ?>
+    <?php while ($row = $result->fetch_assoc()): ?>
+      <tr>
+        <td class="text-center"><?= $row['id'] ?></td>
+        <td><?= $row['nome'] ?></td>
+        <td>R$ <?= number_format($row['preco'], 2, ',', '.') ?></td>
+        <td><?= $row['descricao'] ?></td>
+        <td class="text-center"><?= $row['estoque'] ?></td>
 
+        <td class="text-center">
+          <a href="produtos/produtosFormAlterar.php?id=<?= $row['id'] ?>" class="btn btn-sm btn-outline-gold me-2">
+            ✏️ Alterar
+          </a>
+
+          <a href="produtos/produtosExcluir.php?id=<?= $row['id'] ?>" class="btn btn-sm btn-outline-danger"
+             onclick="return confirm('Tem certeza que deseja excluir este produto?');">
+            🗑️ Excluir
+          </a>
+        </td>
+      </tr>
+
+    <?php endwhile; ?>
+    <div>
+      <a href="../index.php?pg=sistema"class="btn btn-gold-outline">Voltar</a>
+    </div>
+
+    </tbody>
 
 </table>
-</body>
+</div></body>
 </html>
