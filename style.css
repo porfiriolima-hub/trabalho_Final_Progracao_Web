@@ -1,0 +1,110 @@
+:root {
+    --navy-premium: #0A1A2F;
+    --gold-classic: #D4A857;
+    --silver-clean: #E5E5E5;
+    --leather-brown: #5A3E2B;
+    --black-steel: #111111;
+
+    --graphite-gray: #2E2E2E;
+    --coffee-brown: #3B2F2F;
+    --medium-blue: #153A63;
+    --dark-gold: #A07A3A;
+
+    --gradient-dark: linear-gradient(135deg, #0A1A2F, #111111);
+    --gradient-gold: linear-gradient(135deg, #D4A857, #A07A3A);
+
+    --text-light: #F5F5F5;
+    --text-dark: #1A1A1A;
+    --text-gold: #D4A857;
+
+    --border-gold: #D4A857;
+    --border-dark: #0A1A2F;
+
+   
+  }
+
+  
+  body {
+    color: var(--text-light);
+    background-color: var(--navy-premium);
+    font-family: "Inter", sans-serif;
+  }
+
+  
+  .navbar {
+    background-color: var(--black-steel) !important;
+  }
+
+  
+  .card {
+    background-color: var(--black-steel);
+    border: 1px solid var(--border-gold);
+    color: var(--text-gold);
+    border-radius: 12px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    cursor: pointer;
+  }
+
+  
+  .card:hover {
+    transform: translateY(-5px);
+    border-color: var(--gold-classic);
+  }
+
+  
+  .card-title {
+    color: var(--gold-classic);
+  }
+
+  
+  .price {
+    font-weight: 700;
+    color: var(--gold-classic);
+  }
+
+  
+.text-gold {
+  color: var(--gold-classic);
+  font-weight: 700;
+}
+
+
+.btn-gold {
+  background: var(--gold-classic);
+  color: var(--black-steel);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+
+.btn-gold:hover {
+  background: #b88a42;
+  color: #000;
+}
+
+
+.btn-outline-gold {
+  border: 1px solid var(--gold-classic);
+  color: var(--gold-classic);
+  border-radius: 8px;
+}
+
+.btn-outline-gold:hover {
+  background: var(--gold-classic);
+  color: var(--black-steel);
+}
+
+
+.table-dark {
+  background: var(--black-steel);
+  color: var(--text-light);
+}
+
+.table-gold th {
+  background: var(--navy-premium);
+  color: var(--gold-classic) !important;
+}
+
+.table-dark tbody tr:hover {
+  background: #1b1b1b;
+}

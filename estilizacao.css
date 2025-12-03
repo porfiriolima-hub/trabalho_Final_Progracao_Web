@@ -1,0 +1,117 @@
+:root {
+  --navy-premium: #0A1A2F;
+  --gold-classic: #D4A857;
+  --black-steel: #111111;
+  --text-light: #F5F5F5;
+}
+
+
+
+body {
+    background-color: #0b1220;
+    color: #e5e7eb;
+    font-family: "Inter", sans-serif;
+}
+
+.navbar {background-color: #0f172a !important;}
+
+.navbar-brand span {
+    color: #38bdf8;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.card {
+    background-color: #0f172a;
+    border: 1px solid #1f2a44;
+    color: #e5e7eb;
+    border-radius: 12px;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+.card-title {color: #38bdf8;}
+
+.price {
+    font-weight: 700;
+    color: #34d399;
+}
+
+form.JOASLUNAs-form > div {
+    margin: 20px;
+    justify-self: center;
+}
+
+section:has(form.JOASLUNAs-form) {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #1f2a44;
+    border-radius: 8px;
+    justify-self: center;
+}
+
+table {
+    text-align: center;
+    justify-self:center;
+    border-radius: 10px;
+    background-color: #1f2a44;
+    margin: 30px;
+    border-collapse: separate;
+    border-spacing: 50px 10px;
+}
+
+.button {    
+    margin: 21px;
+    justify-self: center;
+}
+/* Título */
+.text-gold {
+  color: var(--gold-classic);
+  font-weight: 700;
+}
+
+/* Botão dourado */
+.btn-gold {
+  background: var(--gold-classic);
+  color: var(--black-steel);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+
+.btn-gold:hover {
+  background: #b88a42;
+  color: #000;
+}
+
+/* Botão outline dourado */
+.btn-outline-gold {
+  border: 1px solid var(--gold-classic);
+  color: var(--gold-classic);
+  border-radius: 8px;
+}
+
+.btn-outline-gold:hover {
+  background: var(--gold-classic);
+  color: var(--black-steel);
+}
+
+/* Tabela */
+.table-dark {
+  background: var(--black-steel);
+  color: var(--text-light);
+}
+
+.table-gold th {
+  background: var(--navy-premium);
+  color: var(--gold-classic) !important;
+}
+
+.table-dark tbody tr:hover {
+  background: #1b1b1b;
+}
