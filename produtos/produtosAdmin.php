@@ -19,7 +19,7 @@ $result = $conn->query($sql);
 <h1 class="mb-4 text-gold">Administração de Produtos</h1>
 
 <div class="mb-3">
-  <a href="produtos/produtosForm.php" class="btn btn-gold fw-bold">
+  <a href="produtosForm.php" class="btn btn-gold fw-bold">
     ➕ Cadastrar Novo Produto
   </a>
 </div>
@@ -48,11 +48,11 @@ $result = $conn->query($sql);
         <td class="text-center"><?= $row['estoque'] ?></td>
 
         <td class="text-center">
-          <a href="produtos/produtosFormAlterar.php?id=<?= $row['id'] ?>" class="btn btn-sm btn-outline-gold me-2">
+          <a href="produtosFormAlterar.php?id=<?= $row['id'] ?>" class="btn btn-sm btn-outline-gold me-2">
             ✏️ Alterar
           </a>
 
-          <a href="produtos/produtosExcluir.php?id=<?= $row['id'] ?>" class="btn btn-sm btn-outline-danger"
+          <a href="produtosExcluir.php?id=<?= $row['id'] ?>" class="btn btn-sm btn-outline-danger"
              onclick="return confirm('Tem certeza que deseja excluir este produto?');">
             🗑️ Excluir
           </a>
