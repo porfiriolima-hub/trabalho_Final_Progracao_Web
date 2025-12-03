@@ -26,6 +26,7 @@
 
       <!-- Corte de Barba -->
       <div class="col">
+        <a href="index.php?pg=enter/opcoes-de-entrada" class="text-decoration-none text-reset">
         <div class="card h-100 p-3 shadow-sm">
           <div class="d-flex justify-content-between align-items-start mb-2">
             <div class="display-6" aria-hidden="true">🧔‍♂️</div>
@@ -42,10 +43,12 @@
             <span class="badge bg-success-subtle text-success border border-success">Sob consulta</span>
           </div>
         </div>
+        </a>
       </div>
 
       <!-- Massagem Facial -->
       <div class="col">
+       <a href="index.php?pg=enter/opcoes-de-entrada" class="text-decoration-none text-reset">
         <div class="card h-100 p-3 shadow-sm">
           <div class="d-flex justify-content-between align-items-start mb-2">
             <div class="display-6" aria-hidden="true">💆‍♂️</div>
@@ -62,10 +65,12 @@
             <span class="badge bg-success-subtle text-success border border-success">45–60 min</span>
           </div>
         </div>
+        </a>
       </div>
 
       <!-- Lavagem e Higienização de Cabelo -->
       <div class="col">
+        <a href="index.php?pg=enter/opcoes-de-entrada" class="text-decoration-none text-reset">
         <div class="card h-100 p-3 shadow-sm">
           <div class="d-flex justify-content-between align-items-start mb-2">
             <div class="display-6" aria-hidden="true">🧴</div>
@@ -82,10 +87,12 @@
             <span class="badge bg-success-subtle text-success border border-success">Sob consulta</span>
           </div>
         </div>
+        </a>
       </div>
 
       <!-- Lavagem e Higienização de Barba -->
       <div class="col">
+        <a href="index.php?pg=enter/opcoes-de-entrada" class="text-decoration-none text-reset">
         <div class="card h-100 p-3 shadow-sm">
           <div class="d-flex justify-content-between align-items-start mb-2">
             <div class="display-6" aria-hidden="true">🧼</div>
@@ -102,10 +109,12 @@
             <span class="badge bg-success-subtle text-success border border-success">Rápido & eficaz</span>
           </div>
         </div>
+        </a>
       </div>
 
       <!-- Tratamentos Capilares -->
       <div class="col">
+        <a href="index.php?pg=enter/opcoes-de-entrada" class="text-decoration-none text-reset">
         <div class="card h-100 p-3 shadow-sm">
           <div class="d-flex justify-content-between align-items-start mb-2">
             <div class="display-6" aria-hidden="true">🌿</div>
@@ -123,10 +132,12 @@
             <span class="badge bg-success-subtle text-success border border-success">Sob avaliação</span>
           </div>
         </div>
+        </a>
       </div>
 
       <!-- Aparar e Modelar Barba -->
       <div class="col">
+        <a href="index.php?pg=enter/opcoes-de-entrada" class="text-decoration-none text-reset">
         <div class="card h-100 p-3 shadow-sm">
           <div class="d-flex justify-content-between align-items-start mb-2">
             <div class="display-6" aria-hidden="true">✂️</div>
@@ -143,10 +154,12 @@
             <span class="badge bg-success-subtle text-success border border-success">Express</span>
           </div>
         </div>
+        </a>
       </div>
 
       <!-- Design de Barba -->
       <div class="col">
+        <a href="index.php?pg=enter/opcoes-de-entrada" class="text-decoration-none text-reset">
         <div class="card h-100 p-3 shadow-sm">
           <div class="d-flex justify-content-between align-items-start mb-2">
             <div class="display-6" aria-hidden="true">🎨</div>
@@ -163,10 +176,12 @@
             <span class="badge bg-success-subtle text-success border border-success">Por horário</span>
           </div>
         </div>
+        </a>
       </div>
 
       <!-- Coloração da Barba e Bigode -->
       <div class="col">
+        <a href="index.php?pg=enter/opcoes-de-entrada" class="text-decoration-none text-reset">
         <div class="card h-100 p-3 shadow-sm">
           <div class="d-flex justify-content-between align-items-start mb-2">
             <div class="display-6" aria-hidden="true">🖌️</div>
@@ -183,10 +198,12 @@
             <span class="badge bg-success-subtle text-success border border-success">Sob consulta</span>
           </div>
         </div>
+        </a>
       </div>
 
       <!-- Depilação -->
       <div class="col">
+        <a href="index.php?pg=enter/opcoes-de-entrada" class="text-decoration-none text-reset">
         <div class="card h-100 p-3 shadow-sm">
           <div class="d-flex justify-content-between align-items-start mb-2">
             <div class="display-6" aria-hidden="true">🕯️</div>
@@ -203,10 +220,12 @@
             <span class="badge bg-success-subtle text-success border border-success">Por área</span>
           </div>
         </div>
+        </a>
       </div>
 
       <!-- Tratamentos Faciais -->
       <div class="col">
+        <a href="index.php?pg=enter/opcoes-de-entrada" class="text-decoration-none text-reset">
         <div class="card h-100 p-3 shadow-sm">
           <div class="d-flex justify-content-between align-items-start mb-2">
             <div class="display-6" aria-hidden="true">🧖‍♂️</div>
@@ -223,10 +242,12 @@
             <span class="badge bg-success-subtle text-success border border-success">Por avaliação</span>
           </div>
         </div>
+        </a>
       </div>
 
       <!-- Manicure e Pedicure -->
       <div class="col">
+        <a href="index.php?pg=enter/opcoes-de-entrada" class="text-decoration-none text-reset">
         <div class="card h-100 p-3 shadow-sm">
           <div class="d-flex justify-content-between align-items-start mb-2">
             <div class="display-6" aria-hidden="true">💅</div>
@@ -243,6 +264,7 @@
             <span class="badge bg-success-subtle text-success border border-success">Sob agendamento</span>
           </div>
         </div>
+        </a>
       </div>
 
     </div>

@@ -19,7 +19,7 @@ $result = $conn->query($sql);
 <div style="border:1px solid #ccc; padding:10px; width:200px;">
 
 
-    <img src="/php/produtos/<?= $row['imagem'] ?>" 
+    <img src="/denilson/produtos/<?= $row['imagem'] ?>" 
          alt="<?= $row['nome'] ?>"
          style="width:100%; height:150px; object-fit:cover;">
 
@@ -28,7 +28,7 @@ $result = $conn->query($sql);
     <p><?= nl2br($row['descricao']) ?></p>
     <p><strong>Estoque:</strong> <?= $row['estoque'] ?></p>
 
-    <a href="produtoDetalhes.php?id=<?= $row['id'] ?>">Ver detalhes</a>
+    <a href="index.php?pg=produtosClientes/produtoDetalhes.php?id=<?= $row['id'] ?>">Ver detalhes</a>
 </div>
 
 <?php endwhile; ?>

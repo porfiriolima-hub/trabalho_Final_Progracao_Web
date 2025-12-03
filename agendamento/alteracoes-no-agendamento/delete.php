@@ -7,7 +7,7 @@
 
     if($conexao){
 
-        mysqli_select_db($conexao, "projeto1");
+        mysqli_select_db($conexao, "barbearia");
 
 
         $email = $_SESSION["email"];
@@ -16,7 +16,7 @@
 
         $resultado = mysqli_query(
             $conexao,
-            "DELETE FROM `agendamentos_cadastrados` WHERE `E-Mail` = '$email' AND `Posicao` = '$posicao';"
+            "DELETE FROM `agendamentos_cadastrados` WHERE `email` = '$email' AND `Posicao` = '$posicao';"
         );
 
 

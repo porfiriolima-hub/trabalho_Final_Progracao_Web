@@ -24,7 +24,7 @@ if (!$produto) {
 
 <h1><?= $produto['nome'] ?></h1>
 
-<img src="/php/produtos/<?= $produto['imagem'] ?>" 
+<img src="/denilson/produtos/<?= $produto['imagem'] ?>" 
      alt="<?= $produto['nome'] ?>"
      style="width:300px; height:300px; object-fit:cover;">
 
